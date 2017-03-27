@@ -4,6 +4,8 @@ Contents: Scripts for creating custom MIDI Remote Scripts for Ableton Live.
 (Known) Working versions: 9.2 and above (currently 9.7.1)
 
 In-depth video tutorial: https://youtu.be/IgKwcCJsoz4
+Use this code for Push 2 User Mode (yet to confirm if working with Push 1, will update soon):
+https://github.com/jzgdev/Push-2-User-Mode-Script
 
 NOTE: I won’t reply here, YouTube is the best place to make comments about the code or suggest changes. 
 
