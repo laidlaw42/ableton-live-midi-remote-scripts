@@ -91,25 +91,25 @@ class YourControllerName(ControlSurface):
 
     def _setup_session_control(self):
         is_momentary = True
-        self._session = SpecialSessionComponent(8, 8)
+        self._session = SpecialSessionComponent(CONTROL_RING_WIDTH, CONTROL_RING_HEIGHT)
         self._session.name = 'Session_Control'
         self._session.set_track_bank_buttons(self._note_map[SESSIONRIGHT], self._note_map[SESSIONLEFT])
         self._session.set_scene_bank_buttons(self._note_map[SESSIONDOWN], self._note_map[SESSIONUP])
         self._session.set_select_buttons(self._note_map[SCENEDN], self._note_map[SCENEUP])
-        self._scene_launch_buttons = [self._note_map[SCENELAUNCH[index]] for index in range(8) ]
-        self._track_stop_buttons = [self._note_map[TRACKSTOP[index]] for index in range(8) ]
+        self._scene_launch_buttons = [self._note_map[SCENELAUNCH[index]] for index in range(CONTROL_RING_WIDTH) ]
+        self._track_stop_buttons = [self._note_map[TRACKSTOP[index]] for index in range(CONTROL_RING_HEIGHT) ]
         self._session.set_stop_all_clips_button(self._note_map[STOPALLCLIPS])
         self._session.set_stop_track_clip_buttons(tuple(self._track_stop_buttons))
         self._session.selected_scene().name = 'Selected_Scene'
         self._session.selected_scene().set_launch_button(self._note_map[SELSCENELAUNCH])
         self._session.set_slot_launch_button(self._note_map[SELCLIPLAUNCH])
-        for scene_index in range(8):
+        for scene_index in range(CONTROL_RING_WIDTH):
             scene = self._session.scene(scene_index)
             scene.name = 'Scene_' + str(scene_index)
             button_row = []
             scene.set_launch_button(self._scene_launch_buttons[scene_index])
             scene.set_triggered_value(2)
-            for track_index in range(8):
+            for track_index in range(CONTROL_RING_HEIGHT):
                 button = self._note_map[CLIPNOTEMAP[scene_index][track_index]]
                 button_row.append(button)
                 clip_slot = scene.clip_slot(track_index)
