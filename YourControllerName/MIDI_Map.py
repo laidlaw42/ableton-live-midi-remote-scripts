@@ -7,6 +7,10 @@
 TRACK_OFFSET = -1 #offset from the left of linked session origin; set to -1 for auto-joining of multiple instances
 SCENE_OFFSET = 0 #offset from the top of linked session origin (no auto-join)
 
+# Set session control grid size here
+CONTROL_RING_WIDTH = 8
+CONTROL_RING_HEIGHT = 8
+
 # Buttons / Pads
 # -------------
 # Valid Note/CC assignments are 0 to 127, or -1 for NONE
