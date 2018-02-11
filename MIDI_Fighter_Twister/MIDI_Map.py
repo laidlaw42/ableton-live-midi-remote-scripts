@@ -78,11 +78,6 @@ SELSCENELAUNCH = -1 #Selected scene launch
 SCENELAUNCH = (-1, #Scene 1 Launch
                -1, #Scene 2
                -1, #Scene 3
-               -1, #Scene 4
-               -1, #Scene 5
-               -1, #Scene 6
-               -1, #Scene 7
-               -1, #Scene 8
                )
 
 # Clip Launch / Stop
@@ -91,14 +86,9 @@ STOPALLCLIPS = -1 #Stop all clips
 
 # 8x8 Matrix note assignments
 # Track no.:     1   2   3   4   5   6   7   8
-CLIPNOTEMAP = ((-1, -1, -1, -1, -1, -1, -1, -1), #Row 1
-               (-1, -1, -1, -1, -1, -1, -1, -1), #Row 2
-               (-1, -1, -1, -1, -1, -1, -1, -1), #Row 3
-               (-1, -1, -1, -1, -1, -1, -1, -1), #Row 4
-               (-1, -1, -1, -1, -1, -1, -1, -1), #Row 5
-               (-1, -1, -1, -1, -1, -1, -1, -1), #Row 6
-               (-1, -1, -1, -1, -1, -1, -1, -1), #Row 7
-               (-1, -1, -1, -1, -1, -1, -1, -1), #Row 8
+CLIPNOTEMAP = ((-1, -1, -1), #Row 1
+               (-1, -1, -1), #Row 2
+               (-1, -1, -1), #Row 3
                )
 
 # Track Control
@@ -106,47 +96,22 @@ MASTERSEL = -1 #Master track select
 TRACKSTOP = (-1, #Track 1 Clip Stop
              -1, #Track 2
              -1, #Track 3
-             -1, #Track 4
-             -1, #Track 5
-             -1, #Track 6
-             -1, #Track 7
-             -1, #Track 8
              )
 TRACKSEL = (-1, #Track 1 Select
             -1, #Track 2
             -1, #Track 3
-            -1, #Track 4
-            -1, #Track 5
-            -1, #Track 6
-            -1, #Track 7
-            -1, #Track 8
             )
 TRACKMUTE = (-1, #Track 1 On/Off
              -1, #Track 2
              -1, #Track 3
-             -1, #Track 4
-             -1, #Track 5
-             -1, #Track 6
-             -1, #Track 7
-             -1, #Track 8
              )
 TRACKSOLO = (-1, #Track 1 Solo
              -1, #Track 2
              -1, #Track 3
-             -1, #Track 4
-             -1, #Track 5
-             -1, #Track 6
-             -1, #Track 7
-             -1, #Track 8
              )
 TRACKREC = (-1, #Track 1 Record
             -1, #Track 2
             -1, #Track 3
-            -1, #Track 4
-            -1, #Track 5
-            -1, #Track 6
-            -1, #Track 7
-            -1, #Track 8
             )
 
 
