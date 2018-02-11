@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*-
 
 import Live
-from YourControllerName import YourControllerName
+from MIDI_Fighter_Twister import MIDI_Fighter_Twister
 
 def create_instance(c_instance):
     ' Creates and returns the APC20 script '
-    return YourControllerName(c_instance)
+    return MIDI_Fighter_Twister(c_instance)
 
 
 # local variables:
