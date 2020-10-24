@@ -130,6 +130,9 @@ class YourControllerName(ControlSurface):
         self._mixer.set_crossfader_control(self._ctrl_map[CROSSFADER])
         self._mixer.set_prehear_volume_control(self._ctrl_map[CUELEVEL])
         self._mixer.master_strip().set_volume_control(self._ctrl_map[MASTERVOLUME])
+        self._mixer.selected_strip().set_arm_button(self._note_map[SELTRACKREC])
+        self._mixer.selected_strip().set_solo_button(self._note_map[SELTRACKSOLO])
+        self._mixer.selected_strip().set_mute_button(self._note_map[SELTRACKMUTE])
         for track in range(8):
             strip = self._mixer.channel_strip(track)
             strip.name = 'Channel_Strip_' + str(track)
