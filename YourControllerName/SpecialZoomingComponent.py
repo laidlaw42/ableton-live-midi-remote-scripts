@@ -1,6 +1,3 @@
-# emacs-mode: -*- python-*-
-# -*- coding: utf-8 -*-
-
 import Live
 from _Framework.SessionZoomingComponent import SessionZoomingComponent
 from _Framework.ButtonElement import ButtonElement
@@ -10,7 +7,6 @@ class SpecialZoomingComponent(SessionZoomingComponent):
 
     def __init__(self, session):
         SessionZoomingComponent.__init__(self, session)
-
 
     def _scroll_up(self):
         #if self._is_zoomed_out:
