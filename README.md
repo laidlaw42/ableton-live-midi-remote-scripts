@@ -23,7 +23,7 @@ to the code as I figure out what each function does.
 ### Instructions
 
 - Connect your MIDI device to your computer
-- Open Live and navigate to Preferences → Link MIDI → MIDI
+- Open Live and navigate to `Preferences → Link MIDI → MIDI`
 - Under either the Input or Output press the dropdown menu 
 - Note the exact name of your controller (if spaces are present in name, use underscores (e.g. "Arturia_Beatstep" 
   instead of "Arturia Beatstep").
@@ -43,8 +43,10 @@ to the code as I figure out what each function does.
 - <b>Important</b>: you must use the value for decimal number when assigning MIDI notes/buttons, <u><b>DO NOT</u></b> 
   use note values like these C3, D4, A1 etc., they won't work. There are tables to work it out from the note, but the
   software is much more efficient and accurate.
-- Save and close everything and either copy (recommended to keep backups here) or move the whole folder to the 
-  MIDI Remote Scripts folder:
+- Save and close everything and make a backup of your edited version, Live 9 compiles your scripts on launch, so you
+  won't be able to make edits after it has done that. You've been warned. Don't let that effort be for nothing.
+- 
+MIDI Remote Scripts folder:
   - For Windows users: `\ProgramData\Ableton\Live x.x\Resources\MIDI Remote Scripts\`
   - For macOS users:
     - Locate the Live application in Finder (typically `/Applications/`), 
@@ -53,7 +55,13 @@ to the code as I figure out what each function does.
 - If you have multiple versions of Live installed, you will have to copy your scripts to each version individually.
 - If you are replacing a pre-existing script with the same device name then make a copy of the original. 
   Otherwise, you will have to reinstall Live to get the default scripts back.
-- Launch Live and test it out.
+- Launch Live and head back to `Preferences → Link MIDI → MIDI`
+- Under the `Control Surface` section, choose an empty slot and assign your newly created script.
+- Set the Input and Output to your MIDI device.
+- Under `MIDI Ports` check that `Remote` and `Track' are set to `On` for both the Input and the Output, or to 
+your preference if you know what you're doing.
+- Test it out.
+- There is going to be a lot of trial and error here but it's pretty straightforward once you get an input working.   
 
 
 ---
@@ -62,6 +70,10 @@ to the code as I figure out what each function does.
   `MIDI Remote Scripts` directory.
 - Set the `BUTTONCHANNEL` and the `SLIDERCHANNEL` correctly. It won't work until you do that.
 - If you have multiple versions of Live installed, you will have to copy your scripts to each version individually.
+- Assign one control message (CC/Note) per parameter.
+- Before you add to `MIDI Remote Scripts` folder just make sure you have the correct MIDI channels and renamed 
+  YourControllerName in `__init__.py` and `YourControllerName.py`. Don't forget to change the folder and the file names
+  as well.
 
 
 ---
