@@ -1,3 +1,6 @@
+# emacs-mode: -*- python-*-
+# -*- coding: utf-8 -*-
+
 import Live
 from _Framework.SessionComponent import SessionComponent
 from _Framework.ButtonElement import ButtonElement
@@ -45,3 +48,8 @@ class SpecialSessionComponent(SessionComponent):
             if ((value != 0) or (not self._slot_launch_button.is_momentary())):
                 if (self.song().view.highlighted_clip_slot != None):
                     self.song().view.highlighted_clip_slot.fire()
+
+
+
+# local variables:
+# tab-width: 4

@@ -2,6 +2,7 @@
 # You'd essentially enable it here by uncommenting then add it YourControllerName.py and MIDI_Map.
 # I experiment more and add myself in the future.
 
+# Partial --== Decompile ==-- with fixes
 import Live
 from _Framework.ControlSurfaceComponent import ControlSurfaceComponent
 from _Framework.ButtonElement import ButtonElement

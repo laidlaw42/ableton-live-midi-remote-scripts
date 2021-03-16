@@ -1,5 +1,3 @@
-# emacs-mode: -*- python-*-
-# -*- coding: utf-8 -*-
 
 import Live
 from YourControllerName import YourControllerName
