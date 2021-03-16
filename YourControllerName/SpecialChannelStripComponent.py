@@ -1,10 +1,9 @@
-# emacs-mode: -*- python-*-
-# -*- coding: utf-8 -*-
-
 from _Framework.ChannelStripComponent import ChannelStripComponent 
 TRACK_FOLD_DELAY = 5
+
+
 class SpecialChannelStripComponent(ChannelStripComponent):
-    ' Subclass of channel strip component using select button for (un)folding tracks '
+    """ Subclass of channel strip component using select button for (un)folding tracks """
     __module__ = __name__
 
     def __init__(self):
@@ -12,13 +11,9 @@ class SpecialChannelStripComponent(ChannelStripComponent):
         self._toggle_fold_ticks_delay = -1
         self._register_timer_callback(self._on_timer)
 
-
-
     def disconnect(self):
         self._unregister_timer_callback(self._on_timer)
         ChannelStripComponent.disconnect(self)
-
-
 
     def _select_value(self, value):
         ChannelStripComponent._select_value(self, value)
@@ -28,8 +23,6 @@ class SpecialChannelStripComponent(ChannelStripComponent):
             else:
                 self._toggle_fold_ticks_delay = -1
 
-
-
     def _on_timer(self):
         if (self.is_enabled() and (self._track != None)):
             if (self._toggle_fold_ticks_delay > -1):
@@ -37,8 +30,3 @@ class SpecialChannelStripComponent(ChannelStripComponent):
                 if (self._toggle_fold_ticks_delay == 0):
                     self._track.fold_state = (not self._track.fold_state)
                 self._toggle_fold_ticks_delay -= 1
-
-
-
-# local variables:
-# tab-width: 4
