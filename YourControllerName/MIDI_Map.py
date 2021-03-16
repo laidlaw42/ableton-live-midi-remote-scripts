@@ -103,6 +103,10 @@ CLIPNOTEMAP = ((-1, -1, -1, -1, -1, -1, -1, -1), #Row 1
 
 # Track Control
 MASTERSEL = -1 #Master track select
+SELTRACKREC = -1 # Arm Selected Track
+SELTRACKSOLO = -1 # Solo Selected Track
+SELTRACKMUTE = -1 # Mute Selected Track
+
 TRACKSTOP = (-1, #Track 1 Clip Stop
              -1, #Track 2
              -1, #Track 3
