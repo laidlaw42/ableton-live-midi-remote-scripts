@@ -1,7 +1,7 @@
 # Ableton Live Custom MIDI Remote Scripts
 
 Scripts for creating custom MIDI Remote Scripts for Ableton Live.
-Known to be working on Live 9 and 10, untested in Live 11.
+Known to be working on Live 9 and 10, untested in 11.
 
 ---
 ### Background
