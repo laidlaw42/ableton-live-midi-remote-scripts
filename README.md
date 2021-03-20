@@ -12,9 +12,9 @@ deserves an update. The video has more details about what to modify to get thing
 to the code as I figure out what each function does.
 
 - Most of the code is from these [Behringer FCB1020 scripts](http://remotescripts.blogspot.com) by Hanz Petrov, if I 
-  can find their git or another source to credit I will. Let me know here if the site is gone, I have archived it for
+  can find their git or another source to credit them appropriately then I will do so. Let me know here if the site is gone, I have archived it for
   posterity.
-- For the Push 2, user [jzgdev](https://github.com/jzgdev/Push2UserModeScript">) has a working Push 2 User Mode.
+- For the Push 2, user [jzgdev](https://github.com/jzgdev/Push2UserModeScript>) has a working Push 2 User Mode.
 - [More information](https://structure-void.com/ableton-live-midi-remote-scripts/) on MIDI remote scripts, the Live API 
   documentation, Push scripts, and [decompiled scripts](https://github.com/gluon) for more current versions of Live by 
   Julien Bayle.
