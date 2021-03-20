@@ -34,7 +34,7 @@ to the code as I figure out what each function does.
 - Rename the YourControllerName folder and the `YourControllerName.py` with the same name.
 - Open `MIDI_Map.py` and inspect what you want to control. Unless stated otherwise, `-1` is the idle/unused value for 
   each parameter. 
-- You can use a third-party tool (see: [Downloads](#downloads))), or your device's user manual to figure out what MIDI
+- You can use a third-party tool (see: [Downloads](#downloads)), or your device's user manual to figure out what MIDI
   channel, note or CC values each control on your device sends.
   I'd do this with pen and paper or [draw.io](https://draw.io).
 - Once you know your layout, assign the values to the respective parameter in `MIDI_Map.py` and ensure you set 
