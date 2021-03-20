@@ -24,8 +24,7 @@ to the code as I figure out what each function does.
 
 - Connect your MIDI device to your computer
 - Open Live and navigate to `Preferences → Link MIDI → MIDI`
-- Under either the Input or Output press the dropdown menu 
-- Note the exact name of your controller (if spaces are present in name, use underscores (e.g. "Arturia_Beatstep" 
+- Under either the Input or Output press the dropdown menu, note the exact name of your controller (if spaces are present in name, use underscores (e.g. "Arturia_Beatstep" 
   instead of "Arturia Beatstep").
 - Close Live.
 - Find and replace all instances in the scripts of `YourControllerName` folder with your controller's name.
