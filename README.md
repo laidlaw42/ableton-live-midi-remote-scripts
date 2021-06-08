@@ -44,7 +44,7 @@ to the code as I figure out what each function does.
   software is much more efficient and accurate.
 - Save and close everything and make a backup of your edited version, Live 9 compiles your scripts on launch, so you
   won't be able to make edits after it has done that. You've been warned. Don't let that effort be for nothing.
-- 
+
 MIDI Remote Scripts folder:
   - For Windows users: `\ProgramData\Ableton\Live x.x\Resources\MIDI Remote Scripts\`
   - For macOS users:
