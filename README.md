@@ -87,7 +87,7 @@ your preference if you know what you're doing.
 
 ---
 ### Downloads
-- [MIDI Manager](https://www.snoize.com/midimonitor/) for macOS (preferred).
+- [MIDI Monitor](https://www.snoize.com/midimonitor/) for macOS (preferred).
 - [MIDI Tools](https://mountainutilities.eu/miditools) for Windows and macOS.
 - [BCRManager](http://mountainutilities.eu/bcmanager) a GUI software solution for editing the Behringer BCR2000. 
 - [Atom](https://atom.io) the code editor I mention in the video.
