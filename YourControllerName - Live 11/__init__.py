@@ -1,5 +1,5 @@
 import Live
-from YourControllerName import YourControllerName
+from .YourControllerName import YourControllerName
 
 
 def create_instance(c_instance):
