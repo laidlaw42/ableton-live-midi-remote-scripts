@@ -1,7 +1,8 @@
 # Ableton Live Custom MIDI Remote Scripts
 
 Scripts for creating custom MIDI Remote Scripts for Ableton Live.
-Known to be working on Live 9 and 10, untested in 11.
+Known to be working with Live 9 and 10. I've added a new directory for Live 11 which updates the code to Python 3.
+Untested in Live 12.
 
 ---
 ### Background
@@ -87,7 +88,7 @@ your preference if you know what you're doing.
 
 ---
 ### Downloads
-- [MIDI Manager](https://www.snoize.com/midimonitor/) for macOS (preferred).
+- [MIDI Monitor](https://www.snoize.com/midimonitor/) for macOS (preferred).
 - [MIDI Tools](https://mountainutilities.eu/miditools) for Windows and macOS.
 - [BCRManager](http://mountainutilities.eu/bcmanager) a GUI software solution for editing the Behringer BCR2000. 
 - [Atom](https://atom.io) the code editor I mention in the video.
