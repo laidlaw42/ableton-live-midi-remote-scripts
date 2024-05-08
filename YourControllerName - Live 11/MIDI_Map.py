@@ -14,7 +14,7 @@ SCENE_OFFSET = 0  # offset from the top of linked session origin (no auto-join)
 # Duplicate assignments are permitted
 
 BUTTONCHANNEL = 0  # Channel assignment for all mapped buttons/pads; valid range is 0 to 15 ; 0=1, 1=2 etc.
-MESSAGETYPE = 0  # Message type for buttons/pads; set to 0 for MIDI Notes, 1 for CCs.
+BUTTONMESSAGETYPE = 0  # Message type for buttons/pads; set to 0 for MIDI Notes, 1 for CCs.
 # When using CCs for buttons/pads, set BUTTONCHANNEL and SLIDERCHANNEL to different values.
 
 
@@ -95,18 +95,6 @@ SCENELAUNCH = (-1,  # Scene 1 Launch
 SELCLIPLAUNCH = -1  # Selected clip launch
 STOPALLCLIPS = -1  # Stop all clips
 
-# 8x8 Matrix note assignments
-# Track no.:     1   2   3   4   5   6   7   8
-CLIPNOTEMAP = ((-1, -1, -1, -1, -1, -1, -1, -1),  # Row 1
-               (-1, -1, -1, -1, -1, -1, -1, -1),  # Row 2
-               (-1, -1, -1, -1, -1, -1, -1, -1),  # Row 3
-               (-1, -1, -1, -1, -1, -1, -1, -1),  # Row 4
-               (-1, -1, -1, -1, -1, -1, -1, -1),  # Row 5
-               (-1, -1, -1, -1, -1, -1, -1, -1),  # Row 6
-               (-1, -1, -1, -1, -1, -1, -1, -1),  # Row 7
-               (-1, -1, -1, -1, -1, -1, -1, -1),  # Row 8
-               )
-
 # Track Control
 MASTERSEL = -1      # Master track select
 SELTRACKREC = -1    # Arm Selected Track
@@ -171,6 +159,23 @@ DRUM_PADS = (-1, -1, -1, -1,  # MIDI note numbers for 4 x 4 Drum Rack
              -1, -1, -1, -1,  # Notes will be "swallowed" if already mapped elsewhere
              -1, -1, -1, -1,
              )
+
+
+# Clip launchers
+CLIPCHANNEL = 0  # Channel assignment for clip launchers; valid range is 0 to 15 ; 0=1, 1=2 etc.
+CLIPMESSAGETYPE = 0  # Message type for clip launchers; set to 0 for MIDI Notes, 1 for CCs.
+
+# 8x8 Matrix note assignments
+# Track no.:     1   2   3   4   5   6   7   8
+CLIPNOTEMAP = ((-1, -1, -1, -1, -1, -1, -1, -1),  # Row 1
+               (-1, -1, -1, -1, -1, -1, -1, -1),  # Row 2
+               (-1, -1, -1, -1, -1, -1, -1, -1),  # Row 3
+               (-1, -1, -1, -1, -1, -1, -1, -1),  # Row 4
+               (-1, -1, -1, -1, -1, -1, -1, -1),  # Row 5
+               (-1, -1, -1, -1, -1, -1, -1, -1),  # Row 6
+               (-1, -1, -1, -1, -1, -1, -1, -1),  # Row 7
+               (-1, -1, -1, -1, -1, -1, -1, -1),  # Row 8
+               )
 
 
 # Sliders / Knobs
@@ -245,5 +250,3 @@ PARAMCONTROL = (-1,  # Param 1 #All 8 params must be assigned to positive values
                 -1,  # Param 7
                 -1,  # Param 8
                 )
-
-

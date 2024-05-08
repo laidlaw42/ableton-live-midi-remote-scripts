@@ -41,6 +41,7 @@ class YourControllerName(ControlSurface):   # Make sure you update the name
         # self.set_suppress_rebuild_requests(True)
         with self.component_guard():
             self._note_map = []
+            self._clip_map = []
             self._ctrl_map = []
             self._load_MIDI_map()
             self._session = None
@@ -58,6 +59,7 @@ class YourControllerName(ControlSurface):   # Make sure you update the name
 
     def disconnect(self):
         self._note_map = None
+        self._clip_map = None
         self._ctrl_map = None
         self._pads = None
         self._do_uncombine()
@@ -107,7 +109,7 @@ class YourControllerName(ControlSurface):   # Make sure you update the name
             scene.set_launch_button(self._scene_launch_buttons[scene_index])
             scene.set_triggered_value(2)
             for track_index in range(TSB_X):    # Change range() value to set the horizontal count for track selection box
-                button = self._note_map[CLIPNOTEMAP[scene_index][track_index]]
+                button = self._clip_map[CLIPNOTEMAP[scene_index][track_index]]
                 button_row.append(button)
                 clip_slot = scene.clip_slot(track_index)
                 clip_slot.name = str(track_index) + '_Clip_Slot_' + str(scene_index)
@@ -208,17 +210,25 @@ class YourControllerName(ControlSurface):   # Make sure you update the name
 
     def _load_MIDI_map(self):
         is_momentary = True
+        # Buttons / Pads
         for note in range(128):
-            button = ButtonElement(is_momentary, MESSAGETYPE, BUTTONCHANNEL, note)
+            button = ButtonElement(is_momentary, BUTTONMESSAGETYPE, BUTTONCHANNEL, note)
             button.name = 'Note_' + str(note)
-            self._note_map.append(button)
-        self._note_map.append(None)     # add None to the end of the list, selectable with [-1]
-        if MESSAGETYPE == MIDI_CC_TYPE and BUTTONCHANNEL == SLIDERCHANNEL:
+            self._button_map.append(button)
+        self._button_map.append(None)     # add None to the end of the list, selectable with [-1]
+        # Clip launcher
+        for note in range(128):
+            button = ButtonElement(is_momentary, CLIPMESSAGETYPE, CLIPCHANNEL, note)
+            button.name = 'Clip_' + str(note)
+            self._clip_map.append(button)
+        self._clip_map.append(None)     # add None to the end of the list, selectable with [-1]
+        # Sliders
+        if BUTTONMESSAGETYPE == MIDI_CC_TYPE and BUTTONCHANNEL == SLIDERCHANNEL:
             for ctrl in range(128):
-                self._ctrl_map.append(None)
+                self._slider_map.append(None)
         else:
             for ctrl in range(128):
                 control = SliderElement(MIDI_CC_TYPE, SLIDERCHANNEL, ctrl)
                 control.name = 'Ctrl_' + str(ctrl)
-                self._ctrl_map.append(control)
-            self._ctrl_map.append(None)
+                self._slider_map.append(control)
+            self._slider_map.append(None)
