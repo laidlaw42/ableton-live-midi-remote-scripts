@@ -20,7 +20,7 @@ MESSAGETYPE = 0  # Message type for buttons/pads; set to 0 for MIDI Notes, 1 for
 
 # Track selection box (aka that coloured box for scene/track launching)
 TSB_X = 8   # Controls the horizontal value for the track selection box. Default value is 8
-TSB_Y = 8   # Controls the horizontal value for the track selection box. Default value is 8
+TSB_Y = 8   # Controls the vertical value for the track selection box. Default value is 8
 
 # General
 PLAY = -1   # Global play
